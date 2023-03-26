@@ -1,0 +1,23 @@
+[
+    {
+        "title" : "Card | 1",
+        "image" : "assets/images/merc.jpg",
+        "link" : "/",
+        "linkText" : "Welcome | Morgan",
+        "raised" : true
+    },
+    {
+        "title" : "Card | 2",
+        "image" : "assets/images/camaro.jpg",
+        "link" : "/",
+        "linkText" : "Welcome | Jessica",
+        "raised" : false
+    },
+    {
+        "title" : "Card | 3",
+        "image" : "assets/images/mustang.jpg",
+        "link" : "/",
+        "linkText" : "Welcome | Xavier",
+        "raised" : true
+    }
+]
