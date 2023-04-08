@@ -11,7 +11,7 @@ media_folder: "assets/images/uploads" # Media files will be stored in the repo u
 collections:
   - label: "Cards"
     name: "cards"
-    folder: "_data"
+    folder: "cms"
     create: true
     format: "json"
     filter: { field: "language", value: "en" }
