@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.html
+layout: blog.html
 title: "new"
 thumbnail: "/assets/images/hero.jpg"
 ---
