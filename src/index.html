@@ -5,14 +5,14 @@ title: Homepage By Eleventy
 
 <div class="hero-banner">
     <div class="overlay">
-    <h1>This is the home page is using the base layoutfrom includes</h1>
+    <h1>This is the home page is using the base layout from includes</h1>
     <p> {{ title }}</p>
     </div>
 </div>
 
 <div class="home-card">
-    {% for card in cards %}
-    {% Card title=card.title, image=card.image, link="https://github.com/MorganBrownDev", linkText=card.linkText %}
+    {% for blog in collections.blog %}
+    {% Card title=blog.data.title, image=card.image, link=blog.url, linkText=card.linkText %}
     {% endfor %}
     <script>
         const menuButton = document.querySelector('.menu-button');
