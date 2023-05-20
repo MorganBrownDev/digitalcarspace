@@ -12,7 +12,7 @@ title: Homepage By Eleventy
 
 <div class="home-card">
     {% for blog in collections.blog %}
-    {% Card title=blog.data.title, image=blog.image, link=blog.url, linkText=blog.data.title %}
+    {% Card title=blog.data.title, image=blog.data.image, link=blog.url, linkText=blog.data.title %}
     {% endfor %}
     <script>
         const menuButton = document.querySelector('.menu-button');
