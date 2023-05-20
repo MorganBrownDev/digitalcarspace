@@ -97,6 +97,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: 1s ease-in-out;
+    color: white;
+    opacity: 0.6;
 }
 
 .card-container-active {
@@ -104,6 +106,16 @@ body {
 }
 
 .card-container:hover {
-    opacity: 0.6;
-    transform: rotateY(-45deg);
+    opacity: 1;
+    transform: rotateY(-15deg);
+}
+
+.card-link {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: inherit;
 }
