@@ -13,12 +13,4 @@ layout: layouts/base.html
     {% for blog in collection.blog %}
     {% Card title=card.title, image=card.image, link="https://github.com/MorganBrownDev", linkText=card.linkText %}
     {% endfor %}
-    <script>
-        const menuButton = document.querySelector('.menu-button');
-const menu = document.querySelector('.menu');
-
-menuButton.addEventListener('click', function() {
-    menu.classList.toggle('show');
-});
-    </script>
 </div>

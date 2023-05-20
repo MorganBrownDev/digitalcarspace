@@ -14,12 +14,4 @@ title: Homepage By Eleventy
     {% for blog in collections.blog %}
     {% Card title=blog.data.title, image=blog.data.thumbnail, link=blog.url, linkText="View" %}
     {% endfor %}
-    <script>
-        const menuButton = document.querySelector('.menu-button');
-const menu = document.querySelector('.menu');
-
-menuButton.addEventListener('click', function() {
-    menu.classList.toggle('show');
-});
-    </script>
 </div>
