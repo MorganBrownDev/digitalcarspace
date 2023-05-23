@@ -2,17 +2,20 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .menu {
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 100%;
     height: auto;
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     transition: 1s ease-in-out;
     background-color: rgb(255, 255, 255);
     z-index: 2000;
@@ -22,7 +25,7 @@ body {
 .hero-banner {
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/images/hero.jpg');
+    background-image: url('/assets/images/mainhero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +58,7 @@ body {
 }
 
 .home-card {
-    padding: 150px;
+    padding: 50px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,7 +114,28 @@ body {
     margin-right: 5px;
 }
 
+.no-margin {
+    margin-right: 0;
+}
+
 .nav-link {
+    font-size: 0.8rem;
     color: inherit;
     text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.logo {
+    font-weight: 700;
 }
