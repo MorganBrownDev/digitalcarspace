@@ -7,9 +7,9 @@ media_folder: "src/assets/images/" # Media files will be stored in the repo unde
 public_folder: "/assets/images/" # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/cms/blogs" # The path to the folder where the documents are stored
+  - name: "cars" # Used in routes, e.g., /admin/collections/blog
+    label: "Cars" # Used in the UI
+    folder: "src/pages/cars" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
