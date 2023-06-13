@@ -1,5 +1,5 @@
 ---
 title: A90 Supra
-thumbnail: /assets/images/anthony-bautista-khqyrs1hoak-unsplash.jpg
+thumbnail: /assets/images/anthony-bautista-ngsvxugixam-unsplash.jpg
 tags: cars
 ---
