@@ -37,7 +37,7 @@ body {
 
 .hero-cms-banner {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,23 +63,42 @@ body {
 
 .fullscreen-display {
     background-image: url('/assets/images/mainhero.jpg');
+    /*background-color: black;*/
     width: 100%;
-    height: 125%;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 4s ease-in-out;
+    /*animation: fullscreen 5s ease-in-out 0 1 normal both;*/
+    animation-name: fullscreen;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    z-index: 1000;
 }
 
-.disable-fullscreen {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%; 
-    z-index: 1000;
-    transition: 4s ease-in-out;
+@keyframes fullscreen {
+    0% {
+        height: 125%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    35% {
+        height: 100%;
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        visibility: hidden;
+    }
 }
 
 .home-card {
