@@ -20,8 +20,8 @@
         </ul>
     </nav>
 </header>
-    
-<div class="hero-banner" style="background-image: url('/assets/images/patrik-storm-alstra-pictures-5rsqu21ia7q-unsplash.jpg');">
+    <div class="hero-banner" style="background-image: url('/assets/images/patrik-storm-alstra-pictures-5rsqu21ia7q-unsplash.jpg');">
+    <div class="fullscreen-display" style="background-image: url('/assets/images/patrik-storm-alstra-pictures-5rsqu21ia7q-unsplash.jpg');"></div>
     <div class="overlay">
     <h1>Nissan Skyline GTR</h1>
     <p>Nissan Skyline GTR</p>
@@ -71,5 +71,16 @@
 </div>
     
 </div>
+
+<script>
+    let fs = document.querySelector('.fullscreen-display');
+    fs.classList.add('disable-fullscreen');
+    setTimeout(() => {
+        fs.style.opacity = 0;}
+    , 4000)
+    setTimeout(() => {
+        fs.style.display = "none"}
+    , 9000)
+</script>
 </body>
 </html>

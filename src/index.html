@@ -4,6 +4,7 @@ title: Welcome
 ---
 
 <div class="hero-banner">
+    <div class="fullscreen-display"></div>
     <div class="overlay">
         <h1>Experience JDM car culture</h1>
     </div>
@@ -14,3 +15,13 @@ title: Welcome
     {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
     {% endfor %}
 </div>
+<script>
+    let fs = document.querySelector('.fullscreen-display');
+    fs.classList.add('disable-fullscreen');
+    setTimeout(() => {
+        fs.style.opacity = 0;}
+    , 4000)
+    setTimeout(() => {
+        fs.style.display = "none"}
+    , 9000)
+</script>

@@ -1,8 +1,8 @@
 ---
 layout: layouts/base.html
 ---
-
 <div class="hero-banner" style="background-image: url('{{ thumbnail }}');">
+    <div class="fullscreen-display" style="background-image: url('{{ thumbnail }}');"></div>
     <div class="overlay">
     <h1>{{ title }}</h1>
     <p>{{ title }}</p>
@@ -14,3 +14,14 @@ layout: layouts/base.html
     {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
     {% endfor %}
 </div>
+
+<script>
+    let fs = document.querySelector('.fullscreen-display');
+    fs.classList.add('disable-fullscreen');
+    setTimeout(() => {
+        fs.style.opacity = 0;}
+    , 4000)
+    setTimeout(() => {
+        fs.style.display = "none"}
+    , 9000)
+</script>

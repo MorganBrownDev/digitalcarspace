@@ -22,6 +22,7 @@
 </header>
     
 <div class="hero-banner">
+    <div class="fullscreen-display"></div>
     <div class="overlay">
         <h1>Experience JDM car culture</h1>
     </div>
@@ -70,6 +71,16 @@
 </div>
     
 </div>
+<script>
+    let fs = document.querySelector('.fullscreen-display');
+    fs.classList.add('disable-fullscreen');
+    setTimeout(() => {
+        fs.style.opacity = 0;}
+    , 4000)
+    setTimeout(() => {
+        fs.style.display = "none"}
+    , 9000)
+</script>
 
 </body>
 </html>

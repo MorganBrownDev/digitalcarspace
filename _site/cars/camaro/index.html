@@ -20,8 +20,8 @@
         </ul>
     </nav>
 </header>
-    
-<div class="hero-banner" style="background-image: url('/assets/images/stefan-rodriguez-2aovfzyv3rc-unsplash.jpg');">
+    <div class="hero-banner" style="background-image: url('/assets/images/stefan-rodriguez-2aovfzyv3rc-unsplash.jpg');">
+    <div class="fullscreen-display" style="background-image: url('/assets/images/stefan-rodriguez-2aovfzyv3rc-unsplash.jpg');"></div>
     <div class="overlay">
     <h1>Camaro</h1>
     <p>Camaro</p>
@@ -71,5 +71,16 @@
 </div>
     
 </div>
+
+<script>
+    let fs = document.querySelector('.fullscreen-display');
+    fs.classList.add('disable-fullscreen');
+    setTimeout(() => {
+        fs.style.opacity = 0;}
+    , 4000)
+    setTimeout(() => {
+        fs.style.display = "none"}
+    , 9000)
+</script>
 </body>
 </html>
