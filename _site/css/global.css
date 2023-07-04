@@ -177,7 +177,7 @@ body {
     opacity: 0.6;
 }
 
-h1 {
+h2 {
     font-weight: 700;
 }
 
@@ -190,5 +190,35 @@ h1 {
     .hero-banner {
         height: 100vh;
     }
+
+    .home-card {
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        height: auto;
+    }
+    .card-container, .card-container-active {
+        height: 350px;
+    }
+
+    .menu {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
+    .card-link {
+        width: 80px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+
 }
