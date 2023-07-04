@@ -167,3 +167,9 @@ h1 {
     font-style: italic;
     letter-spacing: 2px;
 }
+@media screen and (min-width: 468px) {
+    .hero-banner {
+        height: 100vh;
+    }
+    
+}
