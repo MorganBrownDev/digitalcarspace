@@ -177,7 +177,7 @@ body {
     opacity: 0.6;
 }
 
-h2 {
+h1 {
     font-weight: 700;
 }
 
@@ -216,7 +216,7 @@ h2 {
         font-size: 0.8rem;
     }
 
-    h2 {
+    h1 {
         font-weight: 700;
         font-size: 1.25rem;
     }
