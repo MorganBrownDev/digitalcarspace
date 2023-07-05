@@ -11,7 +11,7 @@ title: Welcome
 </div>
 
 <div class="home-card">
-    {% for cars in collections.cars %}
+    {% for cars in collections.cars sort(cars.title) %}
     {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
     {% endfor %}
 </div>
