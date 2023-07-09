@@ -1,5 +1,5 @@
 ---
 title: Mazda
-thumbnail: /assets/images/willian-cittadin-crzayml2fm-unsplash.jpg
+thumbnail: /assets/images/anthony-bautista-jwmuq3cx6zo-unsplash.jpg
 tags: cars
 ---

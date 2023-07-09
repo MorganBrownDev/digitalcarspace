@@ -1,5 +1,5 @@
 ---
 title: Subaru
-thumbnail: /assets/images/dillon-kydd-pcztkhb8788-unsplash.jpg
+thumbnail: /assets/images/vitali-adutskevich-x-zdiyiraa0-unsplash.jpg
 tags: cars
 ---
