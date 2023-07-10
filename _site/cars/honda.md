@@ -1,5 +1,5 @@
 ---
 title: Honda
-thumbnail: /assets/images/haidong-liang-5enomxkb2w4-unsplash.jpg
+thumbnail: /assets/images/eloy-carrasco-fmf95zyq_cy-unsplash.jpg
 tags: cars
 ---
