@@ -6,6 +6,11 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu {
     padding-top: 10px;
     padding-bottom: 10px;
