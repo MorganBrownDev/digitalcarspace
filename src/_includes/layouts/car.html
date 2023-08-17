@@ -1,15 +1,15 @@
 ---
 layout: layouts/base.html
 ---
-<div class="hero-banner" style="background-image: url('{{ thumbnail }}');">
-    <div class="fullscreen-display" style="background-image: url('{{ thumbnail }}');"></div>
+<div class="hero_banner" style="background-image: url('{{ thumbnail }}');">
+    <div class="fullscreen_display" style="background-image: url('{{ thumbnail }}');"></div>
     <div class="overlay">
     <h1>{{ title }}</h1>
     <p>{{ title }}</p>
     </div>
 </div>
 
-<div class="home-card">
+<div class="home_card">
     {% for cars in collections.cars %}
     {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
     {% endfor %}

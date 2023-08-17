@@ -3,14 +3,13 @@ layout: layouts/base.html
 title: Showcase
 ---
 
-<div class="hero-banner" style="background-image: url(../assets/images/showcasehero.jpg);">
-    <div class="fullscreen-display" style="background-image: url(../assets/images/showcasehero.jpg);"></div>
+<div class="hero_banner" style="background-image: url(../assets/images/showcasehero.jpg);">
     <div class="overlay">
         <h1>Showcase</h1>
     </div>
 </div>
 
-<div class="home-card">
+<div class="home_card">
     {% for cars in collections.cars %}
     {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
     {% endfor %}

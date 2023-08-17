@@ -3,14 +3,24 @@ layout: layouts/home.html
 title: Welcome
 ---
 
-<div class="hero-banner">
-    <div class="fullscreen-display"></div>
+<div class="hero_banner">
     <div class="overlay">
         <h1>Experience JDM car culture</h1>
     </div>
 </div>
-
-<div class="home-card">
+<div class="intro_section">
+    <h2 class="display_heading">Japanese Domestic Market</h2>
+    <h3 class="display_sub_heading">Japanese Domestic Market (JDM) is the leading market for Japanese domestic goods and services in Japan.</h3>
+</div>
+<div class="intro_section">
+    <h2 class="display_heading">Choose Your Style</h2>
+    <h3 class="display_sub_heading">VIP || Drift || Stance || Race</h3>
+</div>
+<div class="intro_section">
+    <h2 class="display_heading">Pick Your Ride</h2>
+    <h3 class="display_sub_heading">Nissan || Toyota || Mazda || Honda</h3>
+</div>
+<div class="home_card">
     {% for cars in collections.cars %}
     {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
     {% endfor %}
