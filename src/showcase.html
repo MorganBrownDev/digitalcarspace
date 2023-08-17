@@ -11,6 +11,6 @@ title: Showcase
 
 <div class="home_card">
     {% for cars in collections.cars %}
-    {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url, linkText="View" %}
+    {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url %}
     {% endfor %}
 </div>
