@@ -22,6 +22,6 @@ title: Welcome
 </div>
 <div class="home_card">
     {% for cars in collections.cars %}
-    {% Card title=cars.data.title, image=cars.data.thumbnail, link=cars.url %}
+    {% Card link=cars.url, title=cars.data.title, image=cars.data.thumbnail %}
     {% endfor %}
 </div>
