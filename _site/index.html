@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome | JDM 101</title>
@@ -8,7 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/global.css">
-
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
 <body>
     <header class="menu">
     <div class="logo">JDM 101</div>
@@ -20,12 +23,65 @@
         </ul>
     </nav>
 </header>
-    
-<div class="hero_banner">
-    <div class="overlay">
-        <h1>Experience JDM car culture</h1>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="my-slider-progress">
+        <div class="my-slider-progress-bar"></div>
     </div>
-</div>
+    <div class="splide__track">
+          <ul class="splide__list" >
+            
+            <li class="splide__slide">
+                <img src="/assets/images/eloy-carrasco-fmf95zyq_cy-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Honda</h2>
+                </div>
+            </li>
+            
+            <li class="splide__slide">
+                <img src="/assets/images/anthony-bautista-jwmuq3cx6zo-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Mazda</h2>
+                </div>
+            </li>
+            
+            <li class="splide__slide">
+                <img src="/assets/images/matteo-balzanelli-9ouv-fdqei4-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Mitsubishi</h2>
+                </div>
+            </li>
+            
+            <li class="splide__slide">
+                <img src="/assets/images/patrik-storm-alstra-pictures-5rsqu21ia7q-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Nissan</h2>
+                </div>
+            </li>
+            
+            <li class="splide__slide">
+                <img src="/assets/images/vitali-adutskevich-x-zdiyiraa0-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Subaru</h2>
+                </div>
+            </li>
+            
+            <li class="splide__slide">
+                <img src="/assets/images/anthony-bautista-ngsvxugixam-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Toyota</h2>
+                </div>
+            </li>
+            
+            <li class="splide__slide">
+                <img src="/assets/images/patrik-storm-alstra-pictures-pbzb3pmyovo-unsplash.jpg" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">Lexus</h2>
+                </div>
+            </li>
+            
+          </ul>       
+    </div>
+  </section>
 <div class="intro_section">
     <h2 class="display_heading">Japanese Domestic Market</h2>
     <h3 class="display_sub_heading">Japanese Domestic Market (JDM) is the leading market for Japanese domestic goods and services in Japan.</h3>
@@ -76,6 +132,12 @@
     </div>
 </a>
     
+    <a href="/cars/lexus/">
+    <div class="card_container " style="background-image: url(/assets/images/patrik-storm-alstra-pictures-pbzb3pmyovo-unsplash.jpg);">
+        <h1 class="card_title">Lexus</h1>
+    </div>
+</a>
+    
 </div>
 
     <script>
@@ -88,6 +150,39 @@
             }
           });
         }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          let splide = new Splide( '.splide', {
+          type: 'loop',
+          perPage: 1,
+          speed: number = 4000,
+          drag: true,
+          snap: true,
+          flickPower: 300,
+          dragMinThreshold: 10,
+          autoplay: true,
+          interval: 4000,
+          direction: 'ttb',
+          height: '100vh',
+          });
+          splide.mount();
+          let bar = splide.root.querySelector( '.my-slider-progress-bar' );
+  
+          // Updates the bar width whenever the carousel moves:
+          splide.on( 'mounted move', function () {
+            let end  = splide.Components.Controller.getEnd() + 1;
+            let rate = Math.min( ( splide.index + 1 ) / end, 1 );
+            bar.style.width = String( 100 * rate ) + '%';
+          } );
+        } );
+
+        setTimeout(() => {
+            document.querySelectorAll('.splide__arrow')[0].style.display = 'none';
+            document.querySelectorAll('.splide__arrow')[1].style.display = 'none';
+            document.querySelector('.splide__pagination').style.display = 'none';
+          },1000);
       </script>
 </body>
 </html>

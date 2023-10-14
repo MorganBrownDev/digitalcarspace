@@ -2,12 +2,23 @@
 layout: layouts/home.html
 title: Welcome
 ---
-
-<div class="hero_banner">
-    <div class="overlay">
-        <h1>Experience JDM car culture</h1>
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="my-slider-progress">
+        <div class="my-slider-progress-bar"></div>
     </div>
-</div>
+    <div class="splide__track">
+          <ul class="splide__list" >
+            {% for cars in collections.cars %}
+            <li class="splide__slide">
+                <img src="{{cars.data.thumbnail}}" class="splide_slide_image" alt="">
+                <div class="overlay_v2">
+                    <h2 class="splide_heading">{{cars.data.title}}</h2>
+                </div>
+            </li>
+            {% endfor %}
+          </ul>       
+    </div>
+  </section>
 <div class="intro_section">
     <h2 class="display_heading">Japanese Domestic Market</h2>
     <h3 class="display_sub_heading">Japanese Domestic Market (JDM) is the leading market for Japanese domestic goods and services in Japan.</h3>
